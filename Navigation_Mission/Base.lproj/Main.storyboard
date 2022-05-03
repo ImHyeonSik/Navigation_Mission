@@ -117,6 +117,15 @@
                                     <action selector="swImageOnOff:" destination="RUJ-Bu-ebG" eventType="valueChanged" id="GgE-xp-Ux4"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H60-pH-dEJ">
+                                <rect key="frame" x="96" y="134" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="확대"/>
+                                <connections>
+                                    <action selector="zoomInOut:" destination="RUJ-Bu-ebG" eventType="touchUpInside" id="aj6-B3-CLM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6X3-ua-d6Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -130,6 +139,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="수정화면" id="qGX-7s-IYk"/>
                     <connections>
+                        <outlet property="btnZoom" destination="H60-pH-dEJ" id="MyI-lX-Snm"/>
                         <outlet property="lblWay" destination="AjE-ea-TNM" id="mfF-nu-rm2"/>
                         <outlet property="swlsOn" destination="Y9w-XV-8ws" id="1xV-49-RWF"/>
                         <outlet property="txMessage" destination="OK6-fo-Q4f" id="RcJ-2m-1xs"/>

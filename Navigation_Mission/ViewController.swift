@@ -12,6 +12,8 @@ class ViewController: UIViewController, EditDelegate {
     let imgOff = UIImage(named: "lamp-off.png")
     
     var isOn = true
+    var isZoom = false
+    var orgZoom = false
     
     @IBOutlet var txMessage: UITextField!
     @IBOutlet var imgView: UIImageView!
@@ -33,6 +35,7 @@ class ViewController: UIViewController, EditDelegate {
         }
         
         editViewController.textMessage = txMessage.text! // 메인 -> 수정 화면으로 데이터 이동
+        editViewController.isZoom = orgZoom
         editViewController.isOn = isOn // 전구의 상태를 전달
         editViewController.delegate = self
     }
@@ -50,6 +53,32 @@ class ViewController: UIViewController, EditDelegate {
             imgView.image = imgOff
             self.isOn = false
         }
+    }
+    func didImageZoomDone(_ controller: EditViewController, isZoom: Bool) {
+        let scale: CGFloat = 2.0
+        var newWidth: CGFloat, newHeight: CGFloat
+        
+        if isZoom {
+            if (orgZoom != true) {
+                self.isZoom = false
+                self.orgZoom = true
+                newWidth = imgView.frame.width * scale
+                newHeight = imgView.frame.height * scale
+                imgView.frame.size = CGSize(width: newWidth, height: newHeight)
+            }
+        }
+        else {
+            if (orgZoom == true) {
+                self.isZoom = true
+                self.orgZoom = false
+                newWidth = imgView.frame.width / scale
+                newHeight = imgView.frame.height / scale
+                imgView.frame.size = CGSize(width: newWidth, height: newHeight)
+            }
+        }
+        
+        
+//        self.isZoom = !isZoom
     }
     
 
