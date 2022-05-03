@@ -13,6 +13,7 @@
 		B5441B752820175900A8F82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5441B732820175900A8F82D /* Main.storyboard */; };
 		B5441B772820175B00A8F82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5441B762820175B00A8F82D /* Assets.xcassets */; };
 		B5441B7A2820175B00A8F82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5441B782820175B00A8F82D /* LaunchScreen.storyboard */; };
+		B5441B82282144D000A8F82D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5441B81282144D000A8F82D /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B5441B762820175B00A8F82D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5441B792820175B00A8F82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5441B7B2820175B00A8F82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5441B81282144D000A8F82D /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				B5441B6F2820175900A8F82D /* SceneDelegate.swift */,
 				B5441B712820175900A8F82D /* ViewController.swift */,
 				B5441B732820175900A8F82D /* Main.storyboard */,
+				B5441B81282144D000A8F82D /* EditViewController.swift */,
 				B5441B762820175B00A8F82D /* Assets.xcassets */,
 				B5441B782820175B00A8F82D /* LaunchScreen.storyboard */,
 				B5441B7B2820175B00A8F82D /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5441B82282144D000A8F82D /* EditViewController.swift in Sources */,
 				B5441B722820175900A8F82D /* ViewController.swift in Sources */,
 				B5441B6E2820175900A8F82D /* AppDelegate.swift in Sources */,
 				B5441B702820175900A8F82D /* SceneDelegate.swift in Sources */,
